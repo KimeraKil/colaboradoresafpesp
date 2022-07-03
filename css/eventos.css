@@ -1,4 +1,4 @@
-body, h2, p {
+body, h2, p{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -7,10 +7,9 @@ h2{
     font-size: 30px;
 }
 
-/* NAVBAR */
 #navbar{
     background-color: #28ac0b;
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);
     padding: 0 15px;
     height: 60px;
 }
@@ -26,10 +25,10 @@ h2{
 }
 
 #navbar img{
-    height: 45px;
-    border-radius: 50%;
-    position: absolute;
-    top: 10px;
+   height: 45px;
+   border-radius: 50%;
+   position: absolute;
+   top: 10px;
 }
 
 #navbar nav{
@@ -38,27 +37,26 @@ h2{
 
 #navbar ul{
     margin-top: 22px;
-}    
+}
 
 #navbar li{
     margin: 0 10px;
 }
 
-#navbar-list li a {
+#navbar-list li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);
 }
 
 #navbar-list li a:hover{
     border-bottom: 1px solid #fff;
 }
 
-/* BANNER */
-#main-banner {
+#main-banner{
     height: 70vh;
     background-image: url('../img/AFPESP_BACK.jpg');
     background-size: cover;
-    padding-top: 15vh;
+    padding-top: 15vm;
 }
 
 #banner-info{
@@ -66,12 +64,12 @@ h2{
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    color:rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
     padding: 50px;
 }
 
 #banner-info img{
-    height: 120px;
+    height: 250px;
     border-radius: 50%;
     background-color: #030700;
     margin-top: 30px;
@@ -95,7 +93,7 @@ h2{
     background-color: #28ac0b;
     color: rgb(255, 255, 255);
     padding-top: 25px;
-    height: 250px;
+    height: 150px;
 }
 
 #section-sobre h2{
@@ -110,13 +108,12 @@ h2{
     line-height: 30px;
 }
 
-#pagina-sections p {
+#pagina-sections p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #pagina-sections {
-
     display: flex;
     text-align: center;
     flex-direction: row;
@@ -126,86 +123,24 @@ h2{
     margin-right: auto;
     margin-bottom: 50px;
 }
-.container{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-}
-.quadro {
-    flex: 1 1 200px;
-    margin-left: 25px;
-    margin-right: 25px;
-    height: 200px;
-    background-size: 350px 200px;
-}
-
-.quadro img{
-    width: 200px;
-    height: 200px;
-    border-right: 3px solid #ED1E24;
-    border-bottom: 3px solid #ED1E24;
-    border-top: 3px solid #ED1E24;
-    border-left: 3px solid #ED1E24;
-}
-
-
-/*#pagina-sections{
-    margin-top: -10px;
-    background-color: #fff;
-    width: 95%;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-#pagina-sections .container{
-    display: flex;
+footer {
+    padding: 20px 0;
+    background-color: #28ac0b;
+    color: #fff;
     text-align: center;
-    justify-content: center;
-}
-
-.container {
-    flex: 1 1 1 1 1;
-    text-align: center;
-    padding: 60px 25px;
-}
-
-.container img{
-    width: 250px;
-    height: 250px;
-    /*height: 80px;
-    padding: 15px;
-    margin-bottom: 25px;
-    border-top: 2px solid #ED1E24;
-    border-left: 2px solid #ED1E24;
-    border-bottom: 2px solid #ED1E24;
-    border-right: 2px solid #ED1E24;
-  }*/
-
-  footer .detail{
-    font-weight: bold;
 }
 
 footer p{
     margin-top: 10px;
 }
 
-footer{
-    padding: 20px 0;
-    background-color: #28ac0b;
-    color: #fff;
-    text-align: center;
+footer .detail{
+    font-weight: bold;
 }
- 
-/* Responsivo */
 
 @media(max-width: 450px)
+
 {
     /* Geral */
     p #navbar-list li a{
@@ -218,7 +153,14 @@ footer{
     }
 
     #navbar img {
-        top: 7px;
+        top: 5px;
+    }
+
+    #banner-info img{
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     #navbar ul{
@@ -238,10 +180,9 @@ footer{
         padding: 2px;*/
     }
 
-    #main-banner p{
-        font-size: 0.8rem;
-        width: 120px;
-        padding: 2px;
+    #banner-info p{
+        font-size: 0.9rem;
+        width: 120px;   
     }
 
     #section-sobre h2{
@@ -253,8 +194,8 @@ footer{
     }
 
     #section-sobre {
-        padding: 2px;
-        height: 470px;
+        padding: 10px;
+        height: 150px;
     }
 
     #pagina-sections {
@@ -271,14 +212,5 @@ footer{
 
     #pagina-sections p{
         display: none;
-    }
-
-    .quadro img{
-        width: 200px;
-        height: 200px;
-        border-right: 3px solid #ED1E24;
-        border-bottom: 3px solid #ED1E24;
-        border-top: 3px solid #ED1E24;
-        border-left: 3px solid #ED1E24;
     }
 }
