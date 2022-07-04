@@ -124,6 +124,24 @@ h2{
     margin-bottom: 50px;
 }
 
+.fotosrec{
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #28ac0b;
+    align-content: space-between;
+    align-items: center;
+}
+
+.fotosrec img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    border: yellow solid 3px;
+}
+
+
 footer {
     padding: 20px 0;
     background-color: #28ac0b;
