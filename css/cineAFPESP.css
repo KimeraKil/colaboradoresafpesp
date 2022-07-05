@@ -70,7 +70,10 @@ h2{
 }
 
 #section-sobre a {
-    color: rgb(255, 255, 255);
+    color: red;
+    padding: 1%;
+    background-color:yellow;
+    border-radius: 10%;
 }
 
 #section-sobre h2{

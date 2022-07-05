@@ -58,21 +58,39 @@ margem esquerda*/
 }
 
 #main-banner{
-    height: 40vh;
-    background-image: url('../img/AFPESP_BACK.jpg');
-    background-size: cover;
-    padding-top: 15vh;
+    /*color:rgb(255, 255, 255) ;*/
+    /*background-color: #28ac0b;*/
+    text-align: center;
+    background-image: url('../img/BSupCardapioAFPESP.png');
+    /*background-size: cover;*/
+    /*padding-top: 15vh;*/
+    padding-bottom: 15px;
+}
+
+.container img{
+    display: flex;
+    height: 4%;
+    width: 99%;
+}
+
+#main-banner p{
+    background-color: #d2b65a;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: normal;
 }
 
 #main-banner img{
-    border-radius: 10%;
-    border: white solid 5px;
-    margin-top: -80px;
-    margin-bottom: -30px;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    height: 300px;
+    height: 120px;
+    border-radius: 50%;
+    /*background-color: #030700;*/
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 #menus p{
@@ -90,31 +108,123 @@ margem esquerda*/
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #menus{
     text-align: center;
+    /*background-color: #28ac0b;*/
+    padding: 15px;
 }
 
 .menu1{
-    border: black solid 1px;
+    border: black dotted 1px;
+    background-color: #fff;
     padding: 50px;
     border-radius: 5%;
-    width: 50%;
+    width: 60%;
     margin-left: 20px;
     margin-top: 10px;
 }
 
 .menu2{
-    border: black solid 1px;
+    border: black dotted 1px;
+    background-color: #fff;
     padding: 50px;
     border-radius: 5%;
-    width: 50%;
+    width: 60%;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+footer .detail{
+    font-weight: bold;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+footer{
+    padding: 20px 0;
+    background-color: #28ac0b;
+    color: #fff;
+    text-align: center;
+}
+
+@media(max-width: 450px)
+{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    }
+
+    p #navbar-list li a{
+        font-size: 0.5rem;
+    }    
+
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 5px;
+    }
+
+    #banner-info img{
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #navbar ul{
+        margin-top: 0.3rem;
+        text-align: center;
+    }
+
+    #main-banner {
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        font-size: 12px;
+        /*text-align: center;*/
+        /*width: 130px;
+        /*margin-right: auto;
+        margin-left: auto;
+        padding: 2px;*/
+    }
+
+    #main-banner p{
+        background-color: #d2b65a;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 50%;
+        padding: 1%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: normal;
+    }
+
+    .menu2{
+        border: none;
+    }
+
+    .menu1{
+        border: none;
+    }
+
+    .container img{
+        display: none;
+    }
 }
