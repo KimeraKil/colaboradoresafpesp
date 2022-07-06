@@ -56,3 +56,32 @@ margem esquerda*/
 #navbar-list li a:hover{
     border-bottom: 1px solid #fff;
 }
+footer .detail{
+    font-weight: bold;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+footer{
+    padding: 20px 0;
+    background-color: #28ac0b;
+    color: #fff;
+    text-align: center;
+}
+
+.fotoselect, .grade img{
+    width: 200px;
+    height: 200px;
+    border: #fff solid 5px;
+    margin: 0px;
+    padding: 0%;
+}
+
+
+.grade{
+    text-align: center;
+    /*margin: 5px;*/
+    background-color: #28ac0b;
+}
