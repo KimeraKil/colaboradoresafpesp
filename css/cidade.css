@@ -85,3 +85,90 @@ footer{
     /*margin: 5px;*/
     background-color: #28ac0b;
 }
+
+@media(max-width: 450px)
+
+{
+    /* Geral */
+    p #navbar-list li a{
+        font-size: 0.5rem;
+    }
+
+    /*navbar*/
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 5px;
+    }
+
+    #banner-info img{
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #navbar ul{
+        margin-top: 0.3rem;
+        text-align: center;
+    }
+
+    #main-banner {
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        font-size: 12px;
+        /*text-align: center;*/
+        /*width: 130px;
+        /*margin-right: auto;
+        margin-left: auto;
+        padding: 2px;*/
+    }
+
+    #banner-info p{
+        font-size: 0.9rem;
+        width: 120px;   
+    }
+
+    #section-sobre h2{
+        font-size: 1.2rem;
+    }
+
+    #section-sobre p{
+        font-size: small;
+    }
+
+    #section-sobre {
+        padding: 10px;
+        height: 150px;
+    }
+
+    #pagina-sections {
+
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    #pagina-sections p{
+        display: none;
+    }
+
+    .fotosrec img{
+        flex: 1 1 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #28ac0b;
+        align-content: space-between;
+        align-items: center;
+    }
+    
+}
