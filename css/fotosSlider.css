@@ -114,10 +114,11 @@ footer{
 }
 
 .slider label {
+    align-self: center;
     background-color: black;
     bottom: 10px;
     cursor: pointer;
-    display: block;
+    display: flex;
     height: 10px;
     position: absolute;
     width: 10px;
