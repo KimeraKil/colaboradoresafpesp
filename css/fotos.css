@@ -1,54 +1,165 @@
-/*   DEFINIÇÃO GERAL  */
-/*Definindo Fonte e Marge Body e H2*/
-body, h2{
+/*Removendo padroes*/
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw;
+    background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
 }
-/*Definindo Tamanho do H2*/
-h2{
-    font-size: 30px;
+
+/*Estilizando*/
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden; /*Esconde Conteudo que esta ultrapassando content*/
+    position: absolute; /*Posiciona Elemento onde quiser*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
 }
-/*Definindo Cor de Fundo, Cor da Fonte, Area Clicavel,
-e Tamanho Navbar*/
+/*Alinhando Navigation*/
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+/*Personalizando Labels*/
+.bar {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    margin: 1px;
+    /*background-image: url('../img/AFPESP_BACK.jpg');*/
+    /*background-size: cover;*/
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar img{
+    width: 45px;
+    height: 45px;
+}
+/*Mudar Quando passar mouse*/
+.bar:hover{
+    background-color: #fff;
+}
+/*Desaparecer com Inputs*/
+input{
+    display: none;
+}
+/*Colocarndo Slides modo Flex e Tamanho <> em 500% poque são 5 Imagens*/
+.slides{
+    display: flex;
+    width: 1800%;
+    height: 100%;
+}
+/*Colocando Imagens ocupando 20% dos 500% que seria 100% para cada, efeito de 6seg*/
+.slide{
+    width: 6%;
+    transition: .6s;
+}
+/*Colocando todas imagens em 100% sem cortes*/
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -6%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -12%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -18%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -24%;
+}
+#slide6:checked ~ .s1{
+    margin-left: -30%;
+}
+#slide7:checked ~ .s1{
+    margin-left: -36%;
+}
+#slide8:checked ~ .s1{
+    margin-left: -42%;
+}
+#slide9:checked ~ .s1{
+    margin-left: -48%;
+}
+#slide10:checked ~ .s1{
+    margin-left: -54%;
+}
+#slide11:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide12:checked ~ .s1{
+    margin-left: -66%;
+}
+#slide13:checked ~ .s1{
+    margin-left: -72%;
+}
+#slide14:checked ~ .s1{
+    margin-left: -78%;
+}
+#slide15:checked ~ .s1{
+    margin-left: -84%;
+}
+#slide16:checked ~ .s1{
+    margin-left: -90%;
+}
+#slide17:checked ~ .s1{
+    margin-left: -96%;
+}
+#slide18:checked ~ .s1{
+    margin-left: -102%;
+}
+
 #navbar{
     background-color: #28ac0b;
     color: rgb(255, 255, 255);
     padding: 0 15px;
     height: 60px;
 }
-/*Definindo comportamento/orientação dos itens*/
-#navbar h2, #navbar nav, #navbar ul, #navbar-list li{
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav{
     display: inline-block;
 }
-/*Definindo posição do Item*/
-#navbar nav{
-    float: right;
-}
-/*Definindo Altura/tamanho da Imagem, trasformação em
-corte redondo em volta da imagem, posição, altura*/
-#navbar img{
-    height: 45px;
-    border-radius: 50%;
-    position: absolute ;
-    top: 10px;
-}
-/*Definindo Margem, altura da linha, e distancia da 
-margem esquerda*/
+
 #navbar h2{
     margin: 0;
     line-height: 60px;
     margin-left: 55px;
 }
-/*Definindo margem da lista */
+
+#navbar img{
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+#navbar nav{
+    float: right;
+}
+
 #navbar ul{
     margin-top: 22px;
-}
-/*Definindo margem da lista*/
+}    
+
 #navbar li{
     margin: 0 10px;
 }
-/*Removendo underline dos links, mudando cor dos links*/
-#navbar-list li a{
+
+#navbar-list li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -56,6 +167,7 @@ margem esquerda*/
 #navbar-list li a:hover{
     border-bottom: 1px solid #fff;
 }
+
 footer .detail{
     font-weight: bold;
 }
@@ -65,25 +177,12 @@ footer p{
 }
 
 footer{
-    padding: 20px 0;
+    position: sticky;
+    margin-top: 43%;
+    padding: 10px 0;
     background-color: #28ac0b;
     color: #fff;
     text-align: center;
-}
-
-.fotoselect, .grade img{
-    width: 200px;
-    height: 200px;
-    border: #fff solid 5px;
-    margin: 0px;
-    padding: 0%;
-}
-
-
-.grade{
-    text-align: center;
-    /*margin: 5px;*/
-    background-color: #28ac0b;
 }
 
 @media(max-width: 450px)
@@ -115,59 +214,44 @@ footer{
         text-align: center;
     }
 
-    #main-banner {
-        height: 40vh;
-        padding-top: 5vh;
-        padding-bottom: 10vh;
-        font-size: 12px;
-        /*text-align: center;*/
-        /*width: 130px;
-        /*margin-right: auto;
-        margin-left: auto;
-        padding: 2px;*/
-    }
-
-    #banner-info p{
-        font-size: 0.9rem;
-        width: 120px;   
-    }
-
-    #section-sobre h2{
-        font-size: 1.2rem;
-    }
-
-    #section-sobre p{
-        font-size: small;
-    }
-
-    #section-sobre {
-        padding: 10px;
-        height: 150px;
-    }
-
-    #pagina-sections {
-
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: space-around;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-    }
-
-    #pagina-sections p{
+    footer{
         display: none;
     }
+    
+    .content {
+        height: 76%;
+        width:90%;
+        border-radius: 20px;
+        overflow: hidden; /*Esconde Conteudo que esta ultrapassando content*/
+        position: absolute; /*Posiciona Elemento onde quiser*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
+    }
 
-    .fotosrec img{
-        flex: 1 1 250px;
+    .navigation {
+        margin-left: 7px;
+        width: 95%;
+        position: absolute;
+        bottom: 10px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: #28ac0b;
-        align-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .bar {
+              
+        width: 40px;
+        height: 40px;
+        border: 2px solid #fff;
+        margin: 1px;
+        /*background-image: url('../img/AFPESP_BACK.jpg');*/
+        /*background-size: cover;*/
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .4s;
+    }
+    .bar img{
+        width: 40px;
+        height: 40px;
     }
 }
