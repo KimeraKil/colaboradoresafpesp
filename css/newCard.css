@@ -223,7 +223,53 @@ footer p{
 
 footer{
     padding: 10px 0;
-    background-color: #28ac0b;
+    background-color: #161623;
     color: #fff;
     text-align: center;
+}
+
+@media(max-width: 450px){
+    .fundo{
+        height: 99%;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1;
+        background-color: #161623;
+    }
+
+    .quadro{
+        top: 30px;
+        position: relative;
+        width: 380px;
+        height: 600px;
+        margin: 10px;
+    
+    }
+
+    .navigation  label{
+        border-radius: 5px;
+        top: 10px;
+        font-size: 10px;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        color: #fff;
+        position: relative;   
+        background-color: #28ac0b;    
+        align-items: center;
+    }
+
+    footer{
+        display: none;
+    }
+
+    body{
+        background-color: #161623;
+        width: 100vw;
+        height: 95%;
+    }
 }
