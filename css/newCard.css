@@ -251,12 +251,12 @@ footer{
     }
 
     .navigation  label{
-        border-radius: 5px;
+        border-radius: 3px;
         top: 10px;
         font-size: 10px;
         text-align: center;
         padding: 5px;
-        margin: 5px;
+        margin: 2px;
         color: #fff;
         position: relative;   
         background-color: #28ac0b;    
