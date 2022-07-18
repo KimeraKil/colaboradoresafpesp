@@ -14,17 +14,18 @@ body {
     width: 935px;
     border-radius: 20px;
     overflow: hidden; /*Esconde Conteudo que esta ultrapassando content*/
-    position: absolute; /*Posiciona Elemento onde quiser*/
-    top: 50%;
+    position: relative; /*Posiciona Elemento onde quiser*/
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
+    transform: translate(-50%, -5%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
 }
 /*Alinhando Navigation*/
 .navigation {
-    position: absolute;
+    position: relative;
     bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
+    left: 16%;
+    top: 50;
+    transform: translate(-50, -50%);
     display: flex;
 }
 /*Personalizando Labels*/
@@ -124,6 +125,9 @@ input{
 }
 
 #navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
     background-color: #28ac0b;
     color: rgb(255, 255, 255);
     padding: 0 15px;
@@ -131,7 +135,7 @@ input{
 }
 
 #navbar h2, #navbar ul, #navbar-list li, #navbar nav{
-    display: inline-block;
+    display: flex;
 }
 
 #navbar h2{
@@ -173,12 +177,15 @@ footer .detail{
 }
 
 footer p{
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 footer{
-    position: sticky;
-    margin-top: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*margin-top: 43%;*/
     padding: 10px 0;
     background-color: #28ac0b;
     color: #fff;
@@ -188,57 +195,75 @@ footer{
 @media(max-width: 450px)
 
 {
-    /* Geral */
-    p #navbar-list li a{
-        font-size: 0.5rem;
-    }
 
-    /*navbar*/
-    #navbar h2 {
-        display: none;
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
     }
-
-    #navbar img {
-        top: 5px;
-    }
-
-    #banner-info img{
-        width: 150px;
-        height: 150px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
     #navbar ul{
         margin-top: 0.3rem;
         text-align: center;
     }
 
-    footer{
+    #navbar-list li a{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    #navbar img{
+        display: flex;
+        float: left;
+        height: 50px;
+        top: 5px;
+    }
+    #navbar h2{
         display: none;
+    }
+
+    #navbar #navbar-list li a{
+        display: flex;
+
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        /*margin-top: 43%;*/
+        top: 10px;
+        padding: 10px 0;
+        background-color: #28ac0b;
+        color: #fff;
+        text-align: center;
     }
     
     .content {
-        height: 76%;
-        width:90%;
+        height: 50%;
+        width:95%;
         border-radius: 20px;
         overflow: hidden; /*Esconde Conteudo que esta ultrapassando content*/
-        position: absolute; /*Posiciona Elemento onde quiser*/
-        top: 50%;
+        position: relative; /*Posiciona Elemento onde quiser*/
+        top: 5%;
         left: 50%;
-        transform: translate(-50%, -50%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
+        transform: translate(-50%, -5%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
     }
 
     .navigation {
-        margin-left: 7px;
-        width: 95%;
-        position: absolute;
+        position: relative;
         bottom: 10px;
+        left: 3%;
+        top: 1%;
+        transform: translate(-50, -50);       
         display: flex;
         flex-wrap: wrap;
+         /*margin-left: 7px;
+        width: 95%;*/
     }
 
-    .bar {
+.bar {
               
         width: 40px;
         height: 40px;
