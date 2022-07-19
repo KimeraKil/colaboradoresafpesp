@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #28ac0b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navTabs{
+    width: 1050px;
+    height: 500px;
+    margin: 5px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.navTabs ul{
+    list-style: none;
+}
+
+.navTabs ul li{
+    float: left;
+}
+
+.navTabs label{
+    width: 100px;
+    padding: 25px;
+    background-color: #363b48;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rdTabs:checked ~ label{
+    background-color: #e54e43;
+}
+.rdTabs{
+    display: none;
+}
+
+.Content{
+    border-top: 5px solid #e54e43;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    height: 420px;
+    width: 1030px;
+    left: 0;
+}
+
+.rdTabs:checked ~ .Content{
+   display: block;
+}
+
+.Content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    overflow: hidden;
+    align-content: center;
+}
+
+.Content .Salada{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.Content .Quente{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.Content .Sobremesa{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.Content .Salada h2, .Quente h2, .Sobremesa h2{
+    color: tomato;
+}
+
+#navbar{
+    background-color: #28ac0b;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav{
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+}
+
+#navbar img{
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+#navbar{
+    border-bottom: 3px solid #fff;
+}
+
+#navbar nav{
+    float: right;
+}
+
+#navbar ul{
+    margin-top: 22px;
+}    
+
+#navbar li{
+    margin: 0 10px;
+}
+
+#navbar-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navbar-list li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+footer .detail{
+    font-weight: bold;
+}
+
+footer p{
+    margin-top: 5px;
+}
+
+footer{
+    position: relative;
+    padding: 10px 0;
+    background-color: #28ac0b;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media(max-width: 450px){
+    /* Geral */
+    p #navbar-list li a{
+        font-size: 0.5rem;
+    }
+
+    /*navbar*/
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 7px;
+    }
+
+    #navbar ul{
+        margin-top: 0.3rem;
+        text-align: center;
+    }
+
+    .navTabs{
+        width: 420px;
+        height: 680px;
+    }
+
+    .navTabs label{
+        width: 40px;
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+
+    .Content{
+        height: 670px;
+        width: 400px;
+        left: 0;
+    }
+
+    .Content .Salada h2, .Quente h2, .Sobremesa h2{
+        margin-top: 15px;
+        color: tomato;
+    }
+    .Content .Salada{
+        display: contents;
+        /*float: left;
+        margin-left: 40px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Quente{
+        display: contents;
+        /*float: left;
+        margin-left: 70px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Sobremesa{
+        display: contents;
+        /*float: left;
+        margin-left: 80px;
+        margin-top: 20px;*/
+    }
+
+    .Content{
+        overflow: hidden;
+        position: absolute;
+ 
+    }
+}
