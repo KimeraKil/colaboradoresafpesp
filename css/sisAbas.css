@@ -159,7 +159,7 @@ footer{
     overflow: hidden;
 }
 
-@media(max-width: 450px){
+@media(max-width: 480px){
     /* Geral */
     p #navbar-list li a{
         font-size: 0.5rem;
@@ -225,5 +225,14 @@ footer{
         overflow: hidden;
         position: absolute;
  
+    }
+    
+        footer{
+        margin-top: 10px;
+        width: 100%;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
     }
 }
